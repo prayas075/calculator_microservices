@@ -1,0 +1,5 @@
+server.port=9092
+spring.application.name=MULTIFICATION-SERVICE
+spring.config.import=optional:configserver:http://localhost:8080
+management.endpoints.web.exposure.include=*
+
