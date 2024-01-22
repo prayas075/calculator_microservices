@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.info.additionconsumer.AdditionConsumer;
 
 @RestController
-@RequestMapping("/subService")
+@RequestMapping("/subtraction")
 public class SubController {
 	@Autowired
 	private AdditionConsumer additionConsumer;

@@ -1,0 +1,29 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 80
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      mvc:
+        routes: 
+        - id: additionService
+          uri: lb://ADDITION-SERVICE
+          predicates:
+          - Path=/addition/**
+        - id: subtractionService
+          uri: lb://SUBSTRACTION-SERVICE
+          predicates:
+          - Path=/subtraction/**
+        - id: multiplicationService
+          uri: lb://MULTIFICATION-SERVICE
+          predicates:
+          - Path=/multiplication/**
+        - id: divisionService
+          uri: lb://DIVISION-SERVICE
+          predicates:
+          - Path=/division/**    

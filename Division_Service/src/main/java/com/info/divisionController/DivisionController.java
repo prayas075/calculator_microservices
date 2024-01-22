@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.info.additionconsumer.AdditionConsumer;
 
 @RestController
-@RequestMapping("/divisionService")
+@RequestMapping("/division")
 public class DivisionController {
 	@Autowired
 	private AdditionConsumer additionConsumer;

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.info.consumeraddtion.AdditionConsumer;
 
 @RestController
-@RequestMapping("/multiService")
+@RequestMapping("/multiplication")
 public class MultiController {
 	@Value("${config.test}")
 	private String config;
